@@ -40,6 +40,10 @@ namespace push_up_position
             this.lblOutputname = new System.Windows.Forms.Label();
             this.lblKetqua = new System.Windows.Forms.Label();
             this.picDown = new System.Windows.Forms.PictureBox();
+            this.cboTk = new System.Windows.Forms.ComboBox();
+            this.txtTk = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picUp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDown)).BeginInit();
             this.SuspendLayout();
@@ -104,7 +108,7 @@ namespace push_up_position
             this.btnChongday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnChongday.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChongday.ForeColor = System.Drawing.Color.MistyRose;
-            this.btnChongday.Location = new System.Drawing.Point(310, 401);
+            this.btnChongday.Location = new System.Drawing.Point(297, 401);
             this.btnChongday.Name = "btnChongday";
             this.btnChongday.Size = new System.Drawing.Size(161, 47);
             this.btnChongday.TabIndex = 5;
@@ -131,7 +135,7 @@ namespace push_up_position
             this.lblKetqua.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblKetqua.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKetqua.ForeColor = System.Drawing.Color.Blue;
-            this.lblKetqua.Location = new System.Drawing.Point(642, 483);
+            this.lblKetqua.Location = new System.Drawing.Point(523, 484);
             this.lblKetqua.Name = "lblKetqua";
             this.lblKetqua.Size = new System.Drawing.Size(175, 57);
             this.lblKetqua.TabIndex = 7;
@@ -147,12 +151,56 @@ namespace push_up_position
             this.picDown.TabIndex = 4;
             this.picDown.TabStop = false;
             // 
+            // cboTk
+            // 
+            this.cboTk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTk.FormattingEnabled = true;
+            this.cboTk.Location = new System.Drawing.Point(749, 112);
+            this.cboTk.Name = "cboTk";
+            this.cboTk.Size = new System.Drawing.Size(184, 28);
+            this.cboTk.TabIndex = 8;
+            this.cboTk.SelectedIndexChanged += new System.EventHandler(this.cboTk_SelectedIndexChanged);
+            // 
+            // txtTk
+            // 
+            this.txtTk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTk.Location = new System.Drawing.Point(746, 430);
+            this.txtTk.Name = "txtTk";
+            this.txtTk.Size = new System.Drawing.Size(187, 27);
+            this.txtTk.TabIndex = 9;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(791, 474);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(100, 36);
+            this.btnAdd.TabIndex = 10;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(749, 74);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(154, 23);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Tài Khoản";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(829, 566);
+            this.ClientSize = new System.Drawing.Size(968, 566);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.txtTk);
+            this.Controls.Add(this.cboTk);
             this.Controls.Add(this.lblKetqua);
             this.Controls.Add(this.lblOutputname);
             this.Controls.Add(this.btnChongday);
@@ -188,6 +236,10 @@ namespace push_up_position
         private System.Windows.Forms.Label lblKetqua;
         private System.Windows.Forms.PictureBox picDown;
         private SoundPlayer music;
+        private System.Windows.Forms.ComboBox cboTk;
+        private System.Windows.Forms.TextBox txtTk;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label label2;
     }
 }
 
